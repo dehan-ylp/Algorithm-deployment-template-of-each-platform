@@ -1,5 +1,5 @@
 # 不同平台的算法部署模版
-各平台算法部署模板（包括海思[SS928](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Hisi/SS928)、[Hi3519_DV500](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Hisi/Hi3519_DV500)；瑞芯微[RV1126](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Rockchip/RV1126)、[RK588](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Rockchip/RK3588)、比特大陆[BM1684X](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Bitmain/BM1684X)）
+各平台算法部署模板（包括海思[SS928](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Hisi/SS928)、[Hi3519_DV500](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Hisi/Hi3519_DV500)；瑞芯微[RV1126](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Rockchip/RV1126)、[RK3588](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Rockchip/RK3588)、比特大陆[BM1684X](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Bitmain/BM1684X)）
 
 ##支持的平台包括
 ```
