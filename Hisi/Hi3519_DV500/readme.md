@@ -1,0 +1,2 @@
+#首先搭建好rknntoolkit以及rknpu环境
+#大致流程
