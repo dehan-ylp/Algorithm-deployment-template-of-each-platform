@@ -1,13 +1,13 @@
 #大致流程
-![推理流程](../../images/RockChip/RV1126/)
+![推理流程](../../images/RockChip/RV1126/1.png)
 ##生成rknn文件
 1.进入docker
 docker run -t -i --privileged -v /dev/bus/usb:/de/bus/usb  \
 -v /home/wzw/rk_npu_sdk/rknn-toolkit-master-v1.7.3:/rknn_toolkit rknn-toolkit:1.7.3 /bin/bash
 2.进入/rknn_toolkit/examples/onnx，复制一个resnet50v2并命名为MNIST
-![MNIST](../../images/RockChip/RV1126/)
+![MNIST](../../images/RockChip/RV1126/2.png)
 3.准备以下文件
-![file](../../images/RockChip/RV1126/)
+![file](../../images/RockChip/RV1126/3.png)
 4.python test.py
 ```python
 import os
@@ -91,12 +91,12 @@ if __name__ == '__main__':
     rknn.release()
 ```
 结果
-![result](../../images/RockChip/RV1126/)
+![result](../../images/RockChip/RV1126/4.png)
 生成rknn文件
-![rknn file](../../images/RockChip/RV1126/)
+![rknn file](../../images/RockChip/RV1126/5.png)
 ##RKNPU
 复制一个mobilenet并命名为MNIST目录结构为
-![目录结构](../../images/RockChip/RV1126/)
+![目录结构](../../images/RockChip/RV1126/6.png)
 将toolkit生成的rknn模型文件拷贝至model
 build.sh
 ```bash
@@ -400,9 +400,9 @@ int main(int argc, char **argv)
 }
 ```
 打印结果
-![result1](../../images/RockChip/RV1126/)
-![result2](../../images/RockChip/RV1126/)
+![result1](../../images/RockChip/RV1126/7.png)
+![result2](../../images/RockChip/RV1126/8.png)
 fp16
-![fp16](../../images/RockChip/RV1126/)
+![fp16](../../images/RockChip/RV1126/9.png)
 uint8
-![ui8nt](../../images/RockChip/RV1126/)
+![ui8nt](../../images/RockChip/RV1126/10.png)
