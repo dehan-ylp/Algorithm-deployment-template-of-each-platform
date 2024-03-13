@@ -1,7 +1,6 @@
-# 大致流程
+# 算法部署大致流程
 ![大致流程](../../images/Bitmain/BM1684X/1.png)
 # 移植步骤
-
 首先搭建好自己的网络模型，并导出为onnx格式--具体可以参照--> 
 https://github.com/warren-wzw/MNIST-pytorch.git
 ## 将onnx模型使用tpu-mlir工具转化为bmodel格式
@@ -74,13 +73,13 @@ function gen_fp16bmodel()
 
 bmodel模型拷贝至板端：scp test_output_fp* linaro@10.12.13.66:/data
 远程连接另一台linux--->ssh -p 22 linaro@10.12.13.66
-2）在板端搭建好sophon-sail环境----> https://kdocs.cn/l/ce7T9GNtS3D3
 # 板端部署
+## 板端环境搭建
+[在板端搭建好sophon-sail环境](http://t.csdnimg.cn/DWBVW)
 ## python版本
 在板端新建一个MNIST文件夹，文件目录如下，其中datasets存放测试数据集train-images-idx3-ubyte，test_output_fp16_1b.bmodel以及test_output_fp32_1b.bmodel为onnx转化后的bmodel模型，test.py为测试代码。
 ![code](../../images/Bitmain/BM1684X/2.png)
-3）主要的原理就是使用sophon提供的api加载能够适配于BM1684X的bmodel类型的模型，并使用他们的api进行模型的推理，官方sail的API可以参考--> 
-https://doc.sophgo.com/sdk-docs/v23.03.01/docs_latest_release/docs/sophon-sail/docs/zh/html/2_module.html
+3）主要的原理就是使用sophon提供的api加载能够适配于BM1684X的bmodel类型的模型，并使用他们的api进行模型的推理，可以参考[官方sail的API](https://doc.sophgo.com/sdk-docs/v23.03.01/docs_latest_release/docs/sophon-sail/docs/zh/html/2_module.html)
 4）下面讲解一下测试代码
 ```python
 #import cv2
@@ -132,8 +131,7 @@ FP16
 基本稳定在4%峰值可达8%
 ![npu](../../images/Bitmain/BM1684X/5.png)
 ## C++版本
-首先安装好c++交叉编译环境
---> https://kdocs.cn/l/cbe77SdEwLKm
+首先安装好[c++交叉编译环境](http://t.csdnimg.cn/kjRsG)
 1：采用交叉编译的方式进行编译，新建文件夹MNIST
 文件结构
 ![dir](../../images/Bitmain/BM1684X/6.png)
