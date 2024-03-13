@@ -1,6 +1,7 @@
 # 大致流程
 ![大致流程](../../images/RockChip/RK3588/1.png)
 # 首先搭建好rknn_toolkit环境
+[（手把手）rknn-toolkit以及rknpu_sdk环境搭建--以rk3588为例](http://t.csdnimg.cn/RpGhd)
 # 转化为rknn模型
 1：进入docker
 ```bash
