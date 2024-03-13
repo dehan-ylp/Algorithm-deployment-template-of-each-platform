@@ -474,3 +474,7 @@ int main()
 ![dir](../../images/Hisi/SS928/9.png)
 ## int 8
 ![dir](../../images/Hisi/SS928/10.png)
+
+## 关于作者
+* warren@伟
+* 个人博客：具体内容可以参考我的博客[CSDN-warren@伟](https://blog.csdn.net/warren103098?type=blog)

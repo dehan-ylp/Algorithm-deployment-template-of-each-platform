@@ -363,3 +363,7 @@ fp16
 ![result4](../../images/Bitmain/BM1684X/10.png)
 int8
 ![result5](../../images/Bitmain/BM1684X/11.png)
+
+## 关于作者
+* warren@伟
+* 个人博客：具体内容可以参考我的博客[CSDN-warren@伟](https://blog.csdn.net/warren103098?type=blog)

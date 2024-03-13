@@ -34,7 +34,7 @@ atc --model=/home/wzw/00-Ascend/model/pico_det_lcnet/pico_det_lcnet.onnx \
 # 推理代码编写
 ## 部署代码逻辑
 ![大致流程](../../images/Hisi/DV500/11.png)
-[安装opencv库](https://blog.csdn.net/warren103098/article/details/133800076?spm=1001.2014.3001.5501) 
+[Hi3516DV500 SVP_NNN添加opencv库记录](http://t.csdnimg.cn/AqZXJ) 
 ```bash
 mkdir -p build/intermediates/soc
 cd build/intermediates/soc
@@ -43,3 +43,7 @@ cmake ../../../src -Dtarget=board -DCMAKE_BUILD_TYPE=Release
 make
 ```
 ![大致流程](../../images/Hisi/DV500/12.png)
+
+## 关于作者
+* warren@伟
+* 个人博客：具体内容可以参考我的博客[CSDN-warren@伟](https://blog.csdn.net/warren103098?type=blog)
