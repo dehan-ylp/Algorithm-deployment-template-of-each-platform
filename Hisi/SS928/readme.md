@@ -1,8 +1,9 @@
 # 大致流程
 ![大致流程](../../images/Hisi/SS928/1.png)
 # 模型转换
-1：准备[MNIST的onnx模型](https://github.com/warren-wzw/MNIST-pytorch.git)
-## 搭建好ATC的环境--> https://kdocs.cn/l/cjeQxGjfojsX
+1：准备[MNIST的onnx模型](https://gitee.com/warren-wei/mnist-pytorch.git)
+## 搭建好ATC的环境 
+[海思SS928搭建NNN环境并添加opencv库](http://t.csdnimg.cn/vqY0J)
 ## 首先设置环境变量
 ```bash
 source /home/warren/Ascend/ascend-toolkit/latest/x86_64-linux/bin/setenv.bash
@@ -119,7 +120,7 @@ export LD_LIBRARY_PATH=/opt/sd/lib
 ```
 执行可执行文件main
 ![dir](../../images/Hisi/SS928/7.png)
-# 代码讲解
+# 推理代码编写
 ![dir](../../images/Hisi/SS928/8.png)
 main.cpp
 ```c
@@ -154,13 +155,6 @@ void Load_data(int num,unsigned char * input_image)
     }
     fseek(file,j,SEEK_SET);
     fread(input_image,sizeof(char),784,file);
-    //print
-/*     for(int i=0;i<MODEL_IN_WIDTH;i++){
-        for(int j=0;j<MODEL_IN_WIDTH;j++){
-            printf("%4d",input_image[i*28+j]);
-        }
-        printf("\n");
-    }  */
     fclose(file);
 }
 void Bubble_sort(float *buffer,int num)
@@ -265,23 +259,6 @@ int main()
         return FAILED;
     }
     INFO_LOG("create model description success");
-/***************************************************/
-/******************print input tensor***************/
-/***************************************************/     
-/*     aclmdlIODims *dim;
-    ret=aclmdlGetInputDims(modelDesc_,0,dim);
-    printf("----------------in dims is %d \n",dim->dimCount);
-    printf("----------------in dims name is: %s dims: \n",dim->name);
-    for(int num=0;num<dim->dimCount;num++){
-        printf("%d ",num,dim->dims[num]);
-    }
-    ret = aclmdlGetOutputDims(modelDesc_,0,dim);
-    printf("----------------out dims is %d \n",dim->dimCount);
-    printf("----------------out dims name is: %s dims:\n",dim->name);
-    for(int num=0;num<dim->dimCount;num++){
-        printf("%d \n",num,dim->dims[num]);
-    } 
-    deviceId_=0;*/
 /***************************************************/
 /******************prepare output data buffer***************/
 /***************************************************/
