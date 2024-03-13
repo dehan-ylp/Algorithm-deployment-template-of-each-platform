@@ -106,7 +106,7 @@ export NPU_HOST_LIB=$DDK_PATH/runtime/lib64/stub
 ```bash
 mkdir -p build/intermediates/host
 ```
-3：
+3：cmake
 ```bash
 cmake ../../../src -DCMAKE_CXX_COMPILER=aarch64-mix210-linux-g++ -DCMAKE_SKIP_RPATH=TRUE
 ```
