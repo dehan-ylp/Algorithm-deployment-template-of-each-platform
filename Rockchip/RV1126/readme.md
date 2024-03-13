@@ -1,6 +1,8 @@
-# 大致流程
+# RV1126算法部署大致流程
 ![推理流程](../../images/RockChip/RV1126/1.png)
-## 生成rknn文件
+## 环境搭建
+[rknn_toolkit以及rknpu环境搭建-rv1126](http://t.csdnimg.cn/2ujQV)
+## 导出rknn文件
 1.进入docker
 docker run -t -i --privileged -v /dev/bus/usb:/de/bus/usb  \
 -v /home/wzw/rk_npu_sdk/rknn-toolkit-master-v1.7.3:/rknn_toolkit rknn-toolkit:1.7.3 /bin/bash
@@ -94,7 +96,7 @@ if __name__ == '__main__':
 ![result](../../images/RockChip/RV1126/4.png)
 生成rknn文件
 ![rknn file](../../images/RockChip/RV1126/5.png)
-## RKNPU
+## 板端部署
 复制一个mobilenet并命名为MNIST目录结构为
 ![目录结构](../../images/RockChip/RV1126/6.png)
 将toolkit生成的rknn模型文件拷贝至model
