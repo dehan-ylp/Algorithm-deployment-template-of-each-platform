@@ -17,7 +17,7 @@
     配置硬件参数：根据目标硬件平台的特性，调整算法参数和性能设置。
     测试和调优：在目标平台上测试部署的算法，并根据性能表现进行调优。
 
-瑞芯微（Rockchip）平台
+## 瑞芯微（Rockchip）平台
 | 硬件平台        | 链接                                         |
 |----------------|----------------------------------------------|
 | RV1126          | [RV1126部署教程](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Rockchip/RV1126) |
@@ -31,8 +31,7 @@
     硬件优化：根据硬件平台的特性进行性能优化和参数调整。
     部署测试：在目标平台上进行算法的部署测试，并评估性能和稳定性。
 
-比特大陆（Bitmain）平台
-瑞芯微（Rockchip）平台
+## 比特大陆（Bitmain）平台
 | 硬件平台        | 链接                                         |
 |----------------|----------------------------------------------|
 | BM1684X          | [BM1684X部署教程](https://gitee.com/warren-wei/Algorithm-deployment-template-of-each-platform/tree/master/Bitmain/BM1684X) |
